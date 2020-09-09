@@ -1,0 +1,33 @@
+<cu-custom bgColor="bg-gradual-pink">
+  <view slot="content">时间轴记事本</view>
+</cu-custom>
+<!--头部-->
+<view class="cu-bar bg-gradual-pink search">
+      <view class='header'>
+      <open-data class='userInfo' type="userAvatarUrl"  bindgetuserinfo="onGotUserInfo"></open-data>
+  </view>
+ 
+    <view class="content">
+      Write Your Note
+    </view>
+    <view class="action">
+      <text class="cuIcon-write" bindtap='add'></text>
+    </view>
+  </view>
+
+<!--记事本区域-->
+<view class="cu-timeline" wx:for="{{lists}}" wx:key="*this.id">
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur" bindtap="edit" data-id="{{item.id}}">
+      <text>{{item.time}}</text>
+      <text>
+      {{item.content}}
+      </text>
+    </view>
+  </view>
+</view>
+
+
+
+
+

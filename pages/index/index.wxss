@@ -1,0 +1,14 @@
+.header {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  background: white;
+  padding: 10rpx 10rpx;
+}
+.userInfo {
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+}
